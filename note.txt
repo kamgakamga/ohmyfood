@@ -1,0 +1,5 @@
+- Je souhaite creer un fichier header et footer separer et les inclures dans mes fichiers 
+  pour cella j'ai utiliser la balise <iframe src="./header_footer/header.html"></iframe> 
+  le probleme est que le style ne charge pas.
+  
+- pour le style principal, utiliser l'appelation global.scss

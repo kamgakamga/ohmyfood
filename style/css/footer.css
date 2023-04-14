@@ -1,0 +1,18 @@
+.footer {
+  background-color: rgb(59, 58, 58);
+  color: beige;
+  padding: 25px;
+  line-height: 1.5;
+}
+.footer__title {
+  padding-bottom: 25px;
+}
+.footer .fas {
+  margin-right: 10px;
+  font-size: 10px;
+}
+.footer .t {
+  font-size: 7px;
+}
+
+/*# sourceMappingURL=footer.css.map */

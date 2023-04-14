@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Shrikhand&display=swap');
+@import url("./header.css");
+@import url("./footer.css");
+
+/******************************VARIABLE*****************************/
+$couleur_primaire:#9356DC;
+$couleur_secondaire:#FF79DA;
+$couleur_tertiaire:#99E2D0;
+$couleur_blanche:#FFFFFF;
+$couleur_grise:#F2F2F2;
+
+
+/******************************MIXIN*****************************/
+@mixin butom-color{
+        background-image: linear-gradient(to top,#9356DC,#FF79DA);
+}
+
+.plat{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $couleur_grise;
+
+        .palette_text{
+                margin: 15px;
+        }
+}
+
+.entree{
+        &__entrecard{
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                margin: 15px;
+                border-radius: 15px;
+                background-color: $couleur_blanche;
+        }
+}
+
+.commander{
+        display: flex;
+        justify-content: center;
+        &__buton{
+                @include butom-color();
+                padding-top: 25px;
+                padding-bottom: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height:40px;
+                width: 40%;
+                border-radius: 40px;
+                max-width: 200px;
+                text-align: center;
+                margin:50px 0 50px 0;
+                color: $couleur_blanche;
+        }      
+}

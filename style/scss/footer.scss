@@ -1,0 +1,22 @@
+$couleur_primaire:#9356DC;
+$couleur_secondaire:#FF79DA;
+$couleur_tertiaire:#99E2D0;
+$couleur_blanche:#FFFFFF;
+$couleur_grise:#F2F2F2;
+
+.footer{
+        background-color: rgb(59, 58, 58);
+        color: beige;
+        padding: 25px;
+        line-height: 1.5;
+        &__title{
+                padding-bottom: 25px;      
+        }
+        .fas{
+                margin-right: 10px;
+                font-size: 10px;
+        }
+        .t{
+                font-size: 7px;
+        }
+}

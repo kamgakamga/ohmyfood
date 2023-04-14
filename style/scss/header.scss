@@ -1,0 +1,24 @@
+$couleur_primaire:#9356DC;
+$couleur_secondaire:#FF79DA;
+$couleur_tertiaire:#99E2D0;
+$couleur_blanche:#FFFFFF;
+$couleur_grise:#F2F2F2;
+
+.header{
+        display: flex;
+        justify-content: space-around;
+        background-color: $couleur_blanche;
+        padding: 10px 0;
+        color: beige;
+        &__span{
+           color: #000;     
+        }
+        &__logo{
+                display: flex;
+                justify-content: center;
+                &__img{
+                        width: 30%;
+                       max-width: 30%;
+                }
+        }
+}
