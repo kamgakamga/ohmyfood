@@ -3,25 +3,74 @@
 @import url("./footer.css");
 /******************************VARIABLE*****************************/
 /******************************MIXIN*****************************/
+h1,
+h2,
+h3 {
+  font-family: "Shrikhand", cursive;
+}
+
+.banieres__div__img {
+  width: 100%;
+}
+
 .plat {
+  margin-top: -15px;
+  font-size: 25px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #F2F2F2;
+  background-color: #ebf0f6;
 }
 .plat .palette_text {
-  margin: 15px;
+  margin: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.plat .palette_text .palette_heart {
+  font-size: 25px;
 }
 
+.entree {
+  margin-top: 20px;
+}
+.entree__title {
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+}
+.entree__title .trait {
+  margin: 6px 0 20px 0;
+  border-color: #99E2D0;
+  width: 55px;
+  height: 5px;
+  background-color: #99E2D0;
+}
 .entree__entrecard {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  margin: 15px;
+  align-items: center;
+  margin: 20px;
   border-radius: 15px;
   background-color: #FFFFFF;
+}
+.entree__entrecard__div {
+  padding: 10px;
+}
+.entree__entrecard__check {
+  padding-top: 25px;
+  height: 80px;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  color: #99E2D0;
+  text-align: center;
+  width: 20%;
+}
+.entree__entrecard__check--background {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding: 2px;
 }
 
 .commander {

@@ -7,6 +7,7 @@ $couleur_primaire:#9356DC;
 $couleur_secondaire:#FF79DA;
 $couleur_tertiaire:#99E2D0;
 $couleur_blanche:#FFFFFF;
+$couleur_grises:#F9F9F9;
 $couleur_grise:#F2F2F2;
 
 
@@ -40,7 +41,8 @@ a{
 } 
 
 body{
-        background-color: aquamarine;
+        background-color:$couleur_grises;
+        font-family: 'Roboto', sans-serif;
         font-family: 'Roboto Condensed', sans-serif;
 }
 
