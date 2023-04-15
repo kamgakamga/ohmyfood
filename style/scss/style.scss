@@ -41,7 +41,7 @@ a{
 } 
 
 body{
-        background-color:$couleur_grises;
+        background-color:$couleur_blanche;
         font-family: 'Roboto', sans-serif;
         font-family: 'Roboto Condensed', sans-serif;
 }
@@ -50,11 +50,11 @@ body{
         background-color: $couleur_grise;
         justify-content: center;
         display: flex;
-        padding-top: 15px;
-        padding-bottom: 15px;
-
+        padding: 15px 0;
+        font-size:20px ;
+        font-weight: bold;
         &__icon{
-           font-size: 14px;
+           font-size: 20px;
         }
         &__ville{
                 text-align: center;
@@ -67,14 +67,16 @@ body{
 }
 
 .baniere{
-        padding-top: 25px;
-        padding-bottom: 25px;
-        justify-content: center;
+        background-color: $couleur_grises;
+        justify-content: space-evenly;
         align-items: center;
         display: flex;
         flex-direction: column;
+        height: 250px;
         &__title{
                 text-align: center;
+                font-size: 30px;
+                margin: 30px 0;
         }
         &__paragraphe{
                 text-align: center;
@@ -88,24 +90,45 @@ body{
                 width: 40%;
                 border-radius: 40px;
                 max-width: 200px;
+                padding: 20px;
                 text-align: center;
-                margin-top:15px ;
+                margin: 30px 0 50px 0;
+                font-size: 14px;
                 background-color: $couleur_secondaire;
                 color: $couleur_blanche;
         }
 }
 .fonctionnement{
+        // border: 2px solid $couleur_primaire;
         background-color: $couleur_blanche;
-        padding: 25px 15px;
+        padding:  0px 20px 0px 20px;
+        margin: 50px 0px 70px 0px;
+        &__title{
+                // border: 2px solid $couleur_primaire;
+                padding-bottom: 10px;
+                font-size: 25px;
+        }
         &__chosissez{
                 background-color:$couleur_grise;
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
-                margin: 10px 0 10px 0px;
+                margin: 20px 10px 20px 10px;
                 height: 50px;
                 border-radius: 20px;
                 position: relative;
+                &__texte{
+                        // flex: 0,5;
+                        // background-color: $couleur_primaire;
+                        text-align: right;
+                        // color: #dc56cc;
+                        margin-left: 100px;
+                }
+                &__icon{
+                        text-align: center;
+                        // margin-left: -20px;
+                        // background-color: $couleur_tertiaire;  
+                }
                 &__numero{
                         position: absolute;
                         background-color: $couleur_primaire;
@@ -117,17 +140,23 @@ body{
                         left: -10px;
                 }
         }
-
 }
+
 .restaurant{
+        padding:  0px 20px 40px 20px;
         background-color:$couleur_grise;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        &__title{
+                padding:  0px 0px 25px 0px;
+                // background-color: $couleur_primaire;
+                font-size: 25px; 
+        }
         .restaurant__br{
                 border-radius: 15px;
                 background-color:$couleur_secondaire;
-                margin: 30px;
+                margin-bottom: 25px;
                 .restaurant__br__liens{
                         &__nouveau{
                                 background-color: $couleur_tertiaire;

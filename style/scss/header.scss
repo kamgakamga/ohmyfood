@@ -5,10 +5,12 @@ $couleur_blanche:#FFFFFF;
 $couleur_grise:#F2F2F2;
 
 .header{
+        // position: fixed;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         background-color: $couleur_blanche;
-        padding: 10px 0;
+        padding: 20px 0;
         color: beige;
         &__span{
            color: #000;     
