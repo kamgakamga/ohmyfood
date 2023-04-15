@@ -27,7 +27,10 @@ main{
          // position: relative;;
         
             background-color: $couleur_blanche; 
-            overflow: hidden;  
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+
         .banieres__div{
                 // background-color: $couleur_primaire;
                          height: 200px;
@@ -35,7 +38,7 @@ main{
                         //  opacity: 0.5;
                         .banieres__div__img{
                                 width: 100%;
-                                height: 300px;
+                                height: 400px;
                         }
                 }
         
