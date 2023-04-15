@@ -29,10 +29,10 @@ main{
             background-color: $couleur_blanche; 
             overflow: hidden;  
         .banieres__div{
-                background-color: $couleur_primaire;
+                // background-color: $couleur_primaire;
                          height: 200px;
                          overflow: hidden;
-                         opacity: 0.5;
+                        //  opacity: 0.5;
                         .banieres__div__img{
                                 width: 100%;
                                 height: 300px;
@@ -48,7 +48,7 @@ main{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                background-color: $couleur_primaire;
+                background-color: $couleur_grise;
                 .palette_text{
                         margin: 40px 20px;
                         display: flex;
