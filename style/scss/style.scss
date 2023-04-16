@@ -96,7 +96,11 @@ body{
 }
 .fonctionnement{
         background-color: $couleur_blanche;
-        padding: 25px 15px;
+        padding: 25px 25px;
+        border: 2px solid $couleur_primaire;
+        &__title{
+                border: 2px solid $couleur_primaire;
+        }
         &__chosissez{
                 background-color:$couleur_grise;
                 display: flex;
