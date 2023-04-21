@@ -62,12 +62,12 @@ main{
                                 // background-color: $couleur_primaire;
                                  .fas{  
                                          display: none; 
-                                         color: #FFFFFF;
-                                         transition:color 10s;
+                                        
                         }
                          .far:hover + .fas{  
                                         display: block;
-                                        color: #79ff94; 
+                                        color: $couleur_secondaire; 
+                                        animation: heatColor 3s;
                         }
                         .far:hover{  
                                 display: none; 
@@ -97,7 +97,7 @@ main{
                 margin: 20px;
                 border-radius: 15px;
                 background-color: $couleur_blanche;
-                //animation: slideUp 3s forwards;
+                box-shadow: 3px 3px 13px -2px rgba(33, 32, 32, 0.2);
                 &__div{
                                 padding: 10px;
                         }
@@ -108,14 +108,35 @@ main{
                      background-color: $couleur_tertiaire;
                      color: $couleur_tertiaire; 
                      text-align: center;
-                     width: 20%; 
+                     width: 20%;
+                     display: none;
+                //      transition: display 10s; 
                      &--background{ 
-                        transform: rotate(.5turn);
+                       
                         background-color: $couleur_blanche;
                         border-radius: 50%;
                         padding: 2px;
+                        
                      }
                 }
+                & .check .contain .spane { 
+                        // color: #56dc73;
+                        // transition: color 10S; 
+                        transform: rotate(0turn);  
+                        transition: transform 2s;       
+                }
+               
+        }
+        &__entrecard:hover{
+                cursor: pointer;
+                transition: transform 3S;
+                & .check{
+                        display: block;
+                        animation:apparition 2s forwards;
+                }
+                & .check .contain .spane {
+                        animation:rotation .5s forwards 
+                                 }
         }
         &__slideUp1{
                 animation: slideUp 1s forwards;
@@ -149,8 +170,6 @@ main{
 }
 
 
-
-
 @keyframes slideUp {
         0%{
         transform: translateY(-200px);
@@ -159,5 +178,32 @@ main{
         100%{
                 transform: translateY(0);
                 opacity: 1;     
+        }
+}
+
+@keyframes rotation {
+        0%{
+        transform:rotate(0turn);
+        }
+        100%{
+                transform: rotate(1turn);     
+        }
+}
+
+@keyframes heatColor {
+        0%{
+          color:$couleur_secondaire  ;
+        }
+        100%{
+                color: $couleur_secondaire;
+        }
+}
+
+@keyframes apparition {
+      from{
+        display: none;
+        }
+        to{
+        display: block;   
         }
 }

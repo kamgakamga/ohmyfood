@@ -51,7 +51,6 @@ a {
 }
 
 body {
-  background-color: #b20a37;
   font-family: "Roboto", sans-serif;
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -180,12 +179,6 @@ body {
 }
 .restaurant .palette_text .palette_heart {
   font-size: 30px;
-}
-.restaurant .palette_text .palette_heart i:hover {
-  background-color: #df1414;
-  background-image: linear-gradient(to right, transparent 50%, #150909 50%, #1c2020);
-  background-size: 200%;
-  transition: 0.4s;
 }
 
 .restaurant__br__liens {

@@ -71,9 +71,6 @@ a{
 } 
 
 body{
-
-       // background-color:$couleur_blanche;
-        background-color:$cd-danger;
         font-family: 'Roboto', sans-serif;
         font-family: 'Roboto Condensed', sans-serif;
 }
@@ -210,12 +207,6 @@ body{
                 justify-content: space-between;
                 .palette_heart{
                         font-size: 30px;
-                }
-                .palette_heart i:hover{
-                        background-color:#df1414;
-                        background-image:linear-gradient(to right, transparent 50%, #150909 50%,#1c2020 ) ;
-                        background-size: 200%;
-                        transition: .4s;
                 }
         }
         
