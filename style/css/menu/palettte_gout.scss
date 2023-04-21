@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Shrikhand&display=swap");
 @import url("./header.css");
 @import url("./footer.css");
-@import url("./_@keyframes.css");
 /******************************VARIABLE*****************************/
 /******************************MIXIN*****************************/
 h1,
@@ -15,6 +14,7 @@ main {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  color: #9356DC;
 }
 main .banieres__div {
   height: 200px;
@@ -33,26 +33,23 @@ main .plat {
   flex-direction: column;
   justify-content: center;
   background-color: #ebf0f6;
-  transition: background-color 1s 2s;
 }
 main .plat .palette_text {
   margin: 40px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #FF79DA;
 }
-main .plat .palette_text .palette_heart .fas {
-  display: none;
-  color: #FFFFFF;
-  transition: color 10s;
+main .plat .palette_text .palette_hear {
+  font-size: 25px;
+  color: #9356DC;
 }
-main .plat .palette_text .palette_heart .far:hover + .fas {
-  display: block;
-  color: #79ff94;
-}
-main .plat .palette_text .palette_heart .far:hover {
-  display: none;
-  color: #79ff94;
+main .plat .palette_text .palette_hear:hover {
+  background-color: #df1414;
+  background-image: linear-gradient(to right, transparent 50%, #150909 50%, #1c2020);
+  background-size: 200%;
+  transition: 0.4s;
 }
 main .entree {
   margin-top: 20px;
@@ -89,19 +86,9 @@ main .entree__entrecard__check {
   width: 20%;
 }
 main .entree__entrecard__check--background {
-  transform: rotate(0.5turn);
   background-color: #FFFFFF;
   border-radius: 50%;
   padding: 2px;
-}
-main .entree__slideUp1 {
-  animation: slideUp 1s forwards;
-}
-main .entree__slideUp2 {
-  animation: slideUp 2s forwards;
-}
-main .entree__slideUp3 {
-  animation: slideUp 3s forwards;
 }
 main .commander {
   display: flex;
@@ -123,15 +110,4 @@ main .commander__buton {
   color: #FFFFFF;
 }
 
-@keyframes slideUp {
-  0% {
-    transform: translateY(-200px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/*# sourceMappingURL=palette_gout.css.map */
+/*# sourceMappingURL=palettte_gout.scss.map */

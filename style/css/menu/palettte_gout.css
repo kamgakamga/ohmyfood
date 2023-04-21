@@ -75,6 +75,7 @@ main .entree__entrecard {
   margin: 20px;
   border-radius: 15px;
   background-color: #FFFFFF;
+  animation: slideUp 3s infinite;
 }
 main .entree__entrecard__div {
   padding: 10px;
@@ -93,15 +94,6 @@ main .entree__entrecard__check--background {
   background-color: #FFFFFF;
   border-radius: 50%;
   padding: 2px;
-}
-main .entree__slideUp1 {
-  animation: slideUp 1s forwards;
-}
-main .entree__slideUp2 {
-  animation: slideUp 2s forwards;
-}
-main .entree__slideUp3 {
-  animation: slideUp 3s forwards;
 }
 main .commander {
   display: flex;
@@ -134,4 +126,4 @@ main .commander__buton {
   }
 }
 
-/*# sourceMappingURL=palette_gout.css.map */
+/*# sourceMappingURL=palettte_gout.css.map */
