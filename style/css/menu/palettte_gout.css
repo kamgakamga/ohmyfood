@@ -43,12 +43,11 @@ main .plat .palette_text {
 }
 main .plat .palette_text .palette_heart .fas {
   display: none;
-  color: #FFFFFF;
-  transition: color 10s;
 }
 main .plat .palette_text .palette_heart .far:hover + .fas {
   display: block;
-  color: #79ff94;
+  color: #FF79DA;
+  animation: heatColor 3s;
 }
 main .plat .palette_text .palette_heart .far:hover {
   display: none;
@@ -75,7 +74,10 @@ main .entree__entrecard {
   margin: 20px;
   border-radius: 15px;
   background-color: #FFFFFF;
-  animation: slideUp 3s infinite;
+  box-shadow: 3px 3px 13px -2px rgba(33, 32, 32, 0.2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 main .entree__entrecard__div {
   padding: 10px;
@@ -88,12 +90,36 @@ main .entree__entrecard__check {
   color: #99E2D0;
   text-align: center;
   width: 20%;
+  display: none;
 }
 main .entree__entrecard__check--background {
-  transform: rotate(0.5turn);
   background-color: #FFFFFF;
   border-radius: 50%;
   padding: 2px;
+}
+main .entree__entrecard .check .contain .spane {
+  transform: rotate(0turn);
+  transition: transform 2s;
+}
+main .entree__entrecard:hover {
+  cursor: pointer;
+  transition: transform 3S;
+}
+main .entree__entrecard:hover .check {
+  display: block;
+  animation: apparition 2s forwards;
+}
+main .entree__entrecard:hover .check .contain .spane {
+  animation: rotation 0.5s forwards;
+}
+main .entree__slideUp1 {
+  animation: slideUp 1s forwards;
+}
+main .entree__slideUp2 {
+  animation: slideUp 2s forwards;
+}
+main .entree__slideUp3 {
+  animation: slideUp 3s forwards;
 }
 main .commander {
   display: flex;
@@ -123,6 +149,30 @@ main .commander__buton {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes heatColor {
+  0% {
+    color: #FF79DA;
+  }
+  100% {
+    color: #FF79DA;
+  }
+}
+@keyframes apparition {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
   }
 }
 

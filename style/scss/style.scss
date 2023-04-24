@@ -1,18 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Shrikhand&display=swap');
 @import url("./header.css");
 @import url("./footer.css");
+@import url("./../css/helpers/_$Variable.css");
 
 /******************************VARIABLE*****************************/
-$couleur_primaire:#9356DC;
-$couleur_secondaire:#FF79DA;
-$couleur_tertiaire:#99E2D0;
-$couleur_blanche:#FFFFFF;
-$couleur_grises:#F9F9F9;
-$couleur_grise:#F2F2F2;
-$cd-txt: #6300a0;
-$cd-box: #fff;
-$cd-txt--invalid: #fff;
-$cd-danger: #b20a37;
 
 .container {
         background-color: rgb(237, 246, 247);
