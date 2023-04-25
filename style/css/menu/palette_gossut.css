@@ -41,6 +41,30 @@ main .plat .palette_text {
   justify-content: space-between;
   align-items: center;
 }
+main .plat .palette_text .coeur-contenant {
+  color: #79ff94;
+  display: inline-block;
+  position: relative;
+  font-size: 100px;
+  overflow: hidden;
+  cursor: pointer;
+}
+main .plat .palette_text .coeur-colore {
+  position: absolute;
+  top: 85px;
+  left: 50px;
+  font-size: 0px;
+  transition: top 0.5s, font-size 0.5s, left 0.5s;
+  background: linear-gradient(to bottom, yellow 0%, red 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .plat .palette_text .coeur-contenant:hover .coeur-colore {
+  top: 8px;
+  font-size: 84px;
+  left: 8px;
+}
 main .plat .palette_text .palette_heart .fas {
   display: none;
 }
@@ -176,4 +200,4 @@ main .commander__buton {
   }
 }
 
-/*# sourceMappingURL=palettte_gout.css.map */
+/*# sourceMappingURL=palette_gout.css.map */

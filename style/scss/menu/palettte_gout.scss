@@ -58,21 +58,34 @@ main{
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                
                         .palette_heart{
-                                // background-color: $couleur_primaire;
-                                 .fas{  
-                                         display: none; 
-                                        
-                        }
-                         .far:hover + .fas{  
-                                        display: block;
-                                        color: $couleur_secondaire; 
-                                        animation: heatColor 3s;
-                        }
-                        .far:hover{  
-                                display: none; 
-                                color: #79ff94; 
-                }
+                                .coeur-contenant {
+                                        display: inline-block;
+                                        position: relative;
+                                        font-size: 100px;
+                                        overflow: hidden;
+                                        cursor: pointer;
+                                    }
+                                    .coeur-colore {
+                                        position: absolute;
+                                        top: 85px;
+                                        left: 50px;
+                                        font-size: 0px;
+                                        transition: top 0.5s, font-size 0.5s, left 0.5s;
+                                        background: linear-gradient(to left, $couleur_primaire 0%,$couleur_secondaire 100%);
+                                        background-clip: text;
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+                                    }
+                                    .coeur-contenant:hover{
+                                        counter-reset: $couleur_secondaire; 
+                                    }
+                                    .coeur-contenant:hover .coeur-colore {
+                                        top: 8px;
+                                        font-size: 84px;
+                                        left: 8px;
+                                    }
                 }
                 }
         }

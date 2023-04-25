@@ -41,17 +41,31 @@ main .plat .palette_text {
   justify-content: space-between;
   align-items: center;
 }
-main .plat .palette_text .palette_heart .fas {
-  display: none;
+main .plat .palette_text .palette_heart .coeur-contenant {
+  display: inline-block;
+  position: relative;
+  font-size: 100px;
+  overflow: hidden;
+  cursor: pointer;
 }
-main .plat .palette_text .palette_heart .far:hover + .fas {
-  display: block;
-  color: #FF79DA;
-  animation: heatColor 3s;
+main .plat .palette_text .palette_heart .coeur-colore {
+  position: absolute;
+  top: 85px;
+  left: 50px;
+  font-size: 0px;
+  transition: top 0.5s, font-size 0.5s, left 0.5s;
+  background: linear-gradient(to left, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-main .plat .palette_text .palette_heart .far:hover {
-  display: none;
-  color: #79ff94;
+main .plat .palette_text .palette_heart .coeur-contenant:hover {
+  counter-reset: #FF79DA;
+}
+main .plat .palette_text .palette_heart .coeur-contenant:hover .coeur-colore {
+  top: 8px;
+  font-size: 84px;
+  left: 8px;
 }
 main .entree {
   margin-top: 20px;
@@ -75,6 +89,9 @@ main .entree__entrecard {
   border-radius: 15px;
   background-color: #FFFFFF;
   box-shadow: 3px 3px 13px -2px rgba(33, 32, 32, 0.2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 main .entree__entrecard__div {
   padding: 10px;
