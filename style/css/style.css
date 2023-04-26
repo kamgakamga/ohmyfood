@@ -3,6 +3,19 @@
 @import url("./footer.css");
 @import url("./../css/helpers/_$Variable.css");
 /******************************VARIABLE*****************************/
+.container3 {
+  position: fixed;
+  background-color: #0d0d0d;
+  opacity: 0.9;
+  height: 100vh;
+  inset: 0px;
+  z-index: 1;
+  color: #FFFFFF;
+  line-height: 500px;
+  padding-left: 45%;
+  animation: display 9s 1s forwards;
+}
+
 .laoder {
   width: 50px;
   height: 50px;
@@ -11,15 +24,6 @@
   position: relative;
   border-radius: 50px;
   border: 6px solid rgba(255, 255, 255, 0.4);
-}
-
-.container3 {
-  background-color: #0d0d0d;
-  height: 500px;
-  color: #FFFFFF;
-  line-height: 500px;
-  padding-left: 45%;
-  animation: display 7s 0s forwards;
 }
 
 .laoder-circle {
@@ -75,9 +79,14 @@
     display: block;
     opacity: 1;
   }
+  50% {
+    display: none;
+    opacity: 0.5;
+  }
   100% {
     display: none;
     opacity: 0;
+    z-index: 0;
   }
 }
 @keyframes spinreverse {
