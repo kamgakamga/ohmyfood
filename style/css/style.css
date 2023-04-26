@@ -1,11 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Shrikhand&display=swap");
 @import url("./header.css");
 @import url("./footer.css");
+@import url("./../css/helpers/_$Variable.css");
 /******************************VARIABLE*****************************/
-.container {
-  background-color: rgb(237, 246, 247);
+.laoder {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.4);
 }
 
+.container3 {
+  background-color: #0d0d0d;
+  height: 500px;
+  color: #FFFFFF;
+  line-height: 500px;
+  padding-left: 45%;
+  animation: display 7s 0s forwards;
+}
+
+.laoder-circle {
+  border-radius: 50px;
+  border: 5px solid transparent;
+  border-top-color: #FFF;
+  border-bottom-color: #FFF;
+  animation: spin 4s linear 0s forwards;
+}
+
+.laoder-circle::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50px;
+  border: 10px solid transparent;
+  border-top-color: #FFF;
+  border-bottom-color: #FFF;
+  opacity: 0.6;
+  animation: spinreverse 3s linear 0s forwards;
+}
+
+.laoder-circle::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50px;
+  border: 10px solid transparent;
+  border-top-color: #FFF;
+  border-bottom-color: #FFF;
+  opacity: 0.6;
+  animation: spinreverse 3s linear 0s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes display {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
 .form__group input {
   border: 2px solid #fff;
   border-radius: 100rem;
@@ -106,6 +190,7 @@ body {
   font-size: 14px;
   background-color: #FF79DA;
   color: #FFFFFF;
+  cursor: b;
 }
 
 .fonctionnement {

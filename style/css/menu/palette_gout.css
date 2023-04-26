@@ -26,7 +26,7 @@ main .banieres__div .banieres__div__img {
 }
 main .plat {
   margin-top: -30px;
-  font-size: 25px;
+  font-size: 20px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   display: flex;
@@ -44,14 +44,15 @@ main .plat .palette_text {
 main .plat .palette_text .palette_heart .coeur-contenant {
   display: inline-block;
   position: relative;
-  font-size: 100px;
+  font-size: 25px;
   overflow: hidden;
   cursor: pointer;
+  color: #a9a9a9;
 }
 main .plat .palette_text .palette_heart .coeur-colore {
   position: absolute;
-  top: 85px;
-  left: 50px;
+  top: 60px;
+  left: 30px;
   font-size: 0px;
   transition: top 0.5s, font-size 0.5s, left 0.5s;
   background: linear-gradient(to left, #9356DC 0%, #FF79DA 100%);
@@ -63,9 +64,9 @@ main .plat .palette_text .palette_heart .coeur-contenant:hover {
   counter-reset: #FF79DA;
 }
 main .plat .palette_text .palette_heart .coeur-contenant:hover .coeur-colore {
-  top: 8px;
-  font-size: 84px;
-  left: 8px;
+  top: 3px;
+  font-size: 21px;
+  left: 2px;
 }
 main .entree {
   margin-top: 20px;
@@ -140,6 +141,7 @@ main .commander {
   justify-content: center;
 }
 main .commander__buton {
+  cursor: pointer;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   padding-top: 25px;
   padding-bottom: 25px;

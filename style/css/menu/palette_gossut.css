@@ -41,41 +41,33 @@ main .plat .palette_text {
   justify-content: space-between;
   align-items: center;
 }
-main .plat .palette_text .coeur-contenant {
-  color: #79ff94;
+main .plat .palette_text .palette_heart .coeur-contenant {
   display: inline-block;
   position: relative;
   font-size: 100px;
   overflow: hidden;
   cursor: pointer;
+  color: aqua;
+  background-color: #9356DC;
 }
-main .plat .palette_text .coeur-colore {
+main .plat .palette_text .palette_heart .coeur-colore {
   position: absolute;
   top: 85px;
   left: 50px;
   font-size: 0px;
   transition: top 0.5s, font-size 0.5s, left 0.5s;
-  background: linear-gradient(to bottom, yellow 0%, red 100%);
+  background: linear-gradient(to left, #9356DC 0%, #FF79DA 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-main .plat .palette_text .coeur-contenant:hover .coeur-colore {
+main .plat .palette_text .palette_heart .coeur-contenant:hover {
+  counter-reset: #FF79DA;
+}
+main .plat .palette_text .palette_heart .coeur-contenant:hover .coeur-colore {
   top: 8px;
   font-size: 84px;
   left: 8px;
-}
-main .plat .palette_text .palette_heart .fas {
-  display: none;
-}
-main .plat .palette_text .palette_heart .far:hover + .fas {
-  display: block;
-  color: #FF79DA;
-  animation: heatColor 3s;
-}
-main .plat .palette_text .palette_heart .far:hover {
-  display: none;
-  color: #79ff94;
 }
 main .entree {
   margin-top: 20px;
@@ -200,4 +192,4 @@ main .commander__buton {
   }
 }
 
-/*# sourceMappingURL=palette_gout.css.map */
+/*# sourceMappingURL=palette_gossut.css.map */
