@@ -124,14 +124,15 @@ main{
                 
                 &__div{
                         padding: 10px;
-                &--font{
+                & p{
                         overflow: hidden;
-                        text-overflow: ellipsis;
                         white-space: nowrap;
+                        text-overflow: ellipsis;
+                        
                        // @include text-overflow-elipsis();
-                        font-weight: bold;   
+                        //font-weight: bold;   
                 }
-                        }
+        }
                 &__check{
                      padding-top: 25px;
                      height:80px;
@@ -141,7 +142,6 @@ main{
                      text-align: center;
                      width: 20%;
                      display: none;
-                  //   animation:apparition 10s ; 
                      transition: display 10s; 
                      &--background{ 
                        
@@ -198,6 +198,7 @@ main{
                 text-align: center;
                 margin:50px 0 50px 0;
                 color: $couleur_blanche;
+                box-shadow: 3px 3px 13px -2px rgba(33, 32, 32, 0.2);
         }      
 }
 }
