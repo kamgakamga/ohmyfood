@@ -226,6 +226,7 @@ body{
                 height: 50px;
                 border-radius: 20px;
                 position: relative;
+                box-shadow: 3px 3px 13px -2px rgba(33, 32, 32, 0.2);
                 &__texte{
                         // flex: 0,5;
                         // background-color: $couleur_primaire;
@@ -249,6 +250,10 @@ body{
                         left: -10px;
                 }
         }
+        &__chosissez:hover{
+                cursor: pointer;
+                background-color: $couleur_grises;
+        }
 }
 
 .restaurant{
@@ -263,9 +268,11 @@ body{
                 font-size: 25px; 
         }
         .restaurant__br{
+                transition: transform 1s ease-in-out;
                 border-radius: 15px;
                 background-color:$couleur_secondaire;
                 margin-bottom: 25px;
+               
                 .restaurant__br__liens{
                         &__nouveau{
                                 background-color: $couleur_tertiaire;
@@ -277,6 +284,9 @@ body{
                         }
                 }
                 
+        }
+        .restaurant__br:hover{
+                transform: scale(1.08);
         }
         .palette_text{
                 margin-top: -4px;

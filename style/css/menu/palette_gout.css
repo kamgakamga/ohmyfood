@@ -17,7 +17,7 @@ main {
   flex-direction: column;
 }
 main .banieres__div {
-  height: 200px;
+  height: 250px;
   overflow: hidden;
 }
 main .banieres__div .banieres__div__img {
@@ -27,8 +27,8 @@ main .banieres__div .banieres__div__img {
 main .plat {
   margin-top: -30px;
   font-size: 20px;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
