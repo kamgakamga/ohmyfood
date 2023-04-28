@@ -27,8 +27,8 @@ main .banieres__div .banieres__div__img {
 main .plat {
   margin-top: -30px;
   font-size: 20px;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +78,7 @@ main .entree__title {
 main .entree__title .trait {
   margin: 6px 0 20px 0;
   border-color: #99E2D0;
-  width: 55px;
+  width: 48px;
   height: 5px;
   background-color: #99E2D0;
 }
@@ -94,6 +94,9 @@ main .entree__entrecard {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+main .entree__entrecard span {
+  padding: 10px;
+}
 main .entree__entrecard__div {
   padding: 10px;
 }
@@ -106,6 +109,7 @@ main .entree__entrecard__check {
   text-align: center;
   width: 20%;
   display: none;
+  transition: display 10s;
 }
 main .entree__entrecard__check--background {
   background-color: #FFFFFF;
@@ -118,11 +122,9 @@ main .entree__entrecard .check .contain .spane {
 }
 main .entree__entrecard:hover {
   cursor: pointer;
-  transition: transform 3S;
 }
 main .entree__entrecard:hover .check {
   display: block;
-  animation: apparition 2s forwards;
 }
 main .entree__entrecard:hover .check .contain .spane {
   animation: rotation 0.5s forwards;
@@ -159,7 +161,7 @@ main .commander__buton {
 
 @keyframes slideUp {
   0% {
-    transform: translateY(-200px);
+    transform: translateY(-60px);
     opacity: 0;
   }
   100% {
@@ -184,11 +186,13 @@ main .commander__buton {
   }
 }
 @keyframes apparition {
-  from {
-    display: none;
-  }
-  to {
+  0% {
     display: block;
+    background-color: #ebf0f6;
+  }
+  100% {
+    display: block;
+    background-color: #9356DC;
   }
 }
 

@@ -46,8 +46,8 @@ main{
         .plat{
                 margin-top:-30px ;
                 font-size: 20px;
-                border-top-left-radius: 50px;
-                border-top-right-radius:50px;
+                border-top-left-radius: 30px;
+                border-top-right-radius:30px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -98,7 +98,7 @@ main{
                 .trait{
                         margin: 6px 0 20px 0;
                         border-color: $couleur_tertiaire;
-                        width: 55px;
+                        width: 48px;
                         height: 5px;
                         background-color:$couleur_tertiaire ;
                 }
@@ -114,6 +114,9 @@ main{
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                & span{
+                        padding: 10px;
+                }
                 
                 &__div{
                         padding: 10px;
@@ -127,7 +130,8 @@ main{
                      text-align: center;
                      width: 20%;
                      display: none;
-                //      transition: display 10s; 
+                  //   animation:apparition 10s ; 
+                     transition: display 10s; 
                      &--background{ 
                        
                         background-color: $couleur_blanche;
@@ -146,14 +150,14 @@ main{
         }
         &__entrecard:hover{
                 cursor: pointer;
-                transition: transform 3S;
+                // transition: transform 3s;
+               
                 & .check{
                         display: block;
-                        animation:apparition 2s forwards;
+                        // animation: apparition 5s linear;
+                        & .contain .spane {animation:rotation .5s forwards }   
                 }
-                & .check .contain .spane {
-                        animation:rotation .5s forwards 
-                                 }
+                
         }
         &__slideUp1{
                 animation: slideUp 1s forwards;
@@ -190,7 +194,7 @@ main{
 
 @keyframes slideUp {
         0%{
-        transform: translateY(-200px);
+        transform: translateY(-60px);
         opacity: 0;
         }
         100%{
@@ -218,10 +222,6 @@ main{
 }
 
 @keyframes apparition {
-      from{
-        display: none;
-        }
-        to{
-        display: block;   
-        }
+        0%{ display: block; background-color: #ebf0f6;}
+        100%{display: block;  background-color: $couleur_primaire; }
 }
