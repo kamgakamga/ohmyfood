@@ -61,11 +61,13 @@ main .plat .palette_text .palette_heart .coeur-colore {
   -webkit-text-fill-color: transparent;
 }
 main .plat .palette_text .palette_heart .coeur-contenant:hover {
+  padding-right: 0.25px;
+  color: #e251ea;
   counter-reset: #FF79DA;
 }
 main .plat .palette_text .palette_heart .coeur-contenant:hover .coeur-colore {
-  top: 3px;
-  font-size: 21px;
+  top: 1.5px;
+  font-size: 23px;
   left: 2px;
 }
 main .entree {
@@ -90,15 +92,18 @@ main .entree__entrecard {
   border-radius: 15px;
   background-color: #FFFFFF;
   box-shadow: 3px 3px 13px -2px rgba(33, 32, 32, 0.2);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 main .entree__entrecard span {
   padding: 10px;
 }
 main .entree__entrecard__div {
   padding: 10px;
+}
+main .entree__entrecard__div--font {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
 }
 main .entree__entrecard__check {
   padding-top: 25px;

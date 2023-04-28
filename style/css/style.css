@@ -149,7 +149,7 @@ body {
 }
 
 .localisation {
-  background-color: #F2F2F2;
+  background-color: #ebf0f6;
   justify-content: center;
   display: flex;
   padding: 15px 0;
@@ -212,12 +212,13 @@ body {
   font-size: 25px;
 }
 .fonctionnement__chosissez {
-  background-color: #F2F2F2;
+  background-color: #ebf0f6;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 10px 20px 10px;
   height: 50px;
+  font-weight: bold;
   border-radius: 20px;
   position: relative;
   box-shadow: 3px 3px 13px -2px rgba(33, 32, 32, 0.2);
@@ -243,10 +244,13 @@ body {
   cursor: pointer;
   background-color: #F9F9F9;
 }
+.fonctionnement__chosissez:hover .color_icon {
+  color: #9356DC;
+}
 
 .restaurant {
   padding: 0px 20px 40px 20px;
-  background-color: #F2F2F2;
+  background-color: #ebf0f6;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -282,6 +286,38 @@ body {
 }
 .restaurant .palette_text .palette_heart {
   font-size: 30px;
+}
+.restaurant .palette_text:nth-child(1) {
+  font-weight: bold;
+}
+.restaurant .palette_text .palette_heart .coeur-contenant {
+  display: inline-block;
+  position: relative;
+  font-size: 25px;
+  overflow: hidden;
+  cursor: pointer;
+  color: #a9a9a9;
+}
+.restaurant .palette_text .palette_heart .coeur-colore {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  font-size: 0px;
+  transition: top 0.5s, font-size 0.5s, left 0.5s;
+  background: linear-gradient(to left, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant .palette_text .palette_heart .coeur-contenant:hover {
+  padding-right: 0.25px;
+  color: #e251ea;
+  counter-reset: #FF79DA;
+}
+.restaurant .palette_text .palette_heart .coeur-contenant:hover .coeur-colore {
+  top: 1.5px;
+  font-size: 23px;
+  left: 2px;
 }
 
 .restaurant__br__liens {
