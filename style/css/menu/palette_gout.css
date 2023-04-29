@@ -43,8 +43,9 @@ main .plat .palette_text {
 }
 main .plat .palette_text .palette_heart .coeur-contenant {
   display: inline-block;
+  height: 28px;
   position: relative;
-  font-size: 25px;
+  font-size: 28px;
   overflow: hidden;
   cursor: pointer;
   color: #a9a9a9;
@@ -52,23 +53,22 @@ main .plat .palette_text .palette_heart .coeur-contenant {
 main .plat .palette_text .palette_heart .coeur-colore {
   position: absolute;
   top: 60px;
-  left: 30px;
+  left: 10px;
   font-size: 0px;
-  transition: top 0.5s, font-size 0.5s, left 0.5s;
-  background: linear-gradient(to left, #9356DC 0%, #FF79DA 100%);
+  transition: top 3s, font-size 3s, left 3s;
+  background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 main .plat .palette_text .palette_heart .coeur-contenant:hover {
-  padding-right: 0.25px;
-  color: #e251ea;
+  color: #FF79DA;
   counter-reset: #FF79DA;
 }
 main .plat .palette_text .palette_heart .coeur-contenant:hover .coeur-colore {
-  top: 1.5px;
-  font-size: 23px;
-  left: 2px;
+  top: 0px;
+  font-size: 28px;
+  left: 0px;
 }
 main .entree {
   margin-top: 20px;
@@ -84,6 +84,13 @@ main .entree__title .trait {
   height: 5px;
   background-color: #99E2D0;
 }
+main .entree .ellipssis {
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 10px;
+}
 main .entree__entrecard {
   display: flex;
   justify-content: space-between;
@@ -92,6 +99,7 @@ main .entree__entrecard {
   border-radius: 15px;
   background-color: #FFFFFF;
   box-shadow: 3px 3px 13px -2px rgba(33, 32, 32, 0.2);
+  overflow: hidden;
 }
 main .entree__entrecard span {
   padding: 10px;
@@ -99,10 +107,11 @@ main .entree__entrecard span {
 main .entree__entrecard__div {
   padding: 10px;
 }
-main .entree__entrecard__div p {
+main .entree__entrecard__div .ellipsis {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-weight: bold;
 }
 main .entree__entrecard__check {
   padding-top: 25px;
@@ -112,26 +121,25 @@ main .entree__entrecard__check {
   color: #99E2D0;
   text-align: center;
   width: 20%;
-  display: none;
-  transition: display 10s;
+  margin-right: -89px;
+  transition: margin-right 1s;
 }
 main .entree__entrecard__check--background {
   background-color: #FFFFFF;
   border-radius: 50%;
-  padding: 2px;
 }
 main .entree__entrecard .check .contain .spane {
-  transform: rotate(0turn);
+  transform: rotate(1turn);
   transition: transform 2s;
 }
 main .entree__entrecard:hover {
   cursor: pointer;
 }
 main .entree__entrecard:hover .check {
-  display: block;
+  margin-right: 0;
 }
 main .entree__entrecard:hover .check .contain .spane {
-  animation: rotation 0.5s forwards;
+  animation: rotation 0.75s forwards;
 }
 main .entree__slideUp1 {
   animation: slideUp 1s forwards;

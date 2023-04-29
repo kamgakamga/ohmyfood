@@ -66,8 +66,9 @@ main{
                         .palette_heart{
                                 .coeur-contenant {
                                         display: inline-block;
+                                        height: 28px;
                                         position: relative;
-                                        font-size: 25px;
+                                        font-size: 28px;
                                         overflow: hidden;
                                         cursor: pointer;
                                         color: $couleur_grisefonse
@@ -75,23 +76,24 @@ main{
                                     .coeur-colore {
                                         position: absolute;
                                         top: 60px;
-                                        left: 30px;
+                                        left: 10px;
                                         font-size: 0px;
-                                        transition: top 0.5s, font-size 0.5s, left 0.5s;
-                                        background: linear-gradient(to left, $couleur_primaire 0%,$couleur_secondaire 100%);
+                                        transition: top 3s, font-size 3s, left 3s;
+                                        background: linear-gradient(to bottom, $couleur_primaire 0%,$couleur_secondaire 100%);
                                         background-clip: text;
                                         -webkit-background-clip: text;
                                         -webkit-text-fill-color: transparent;
                                     }
                                     .coeur-contenant:hover{
-                                        padding-right: 0.25px;
-                                        color: #e251ea;
-                                        counter-reset: $couleur_secondaire; 
+                                        //padding-right: 0.25px;
+                                        color: $couleur_secondaire;
+                                        counter-reset: $couleur_secondaire;
+
                                     }
                                     .coeur-contenant:hover .coeur-colore {
-                                        top: 1.5px;
-                                        font-size: 23px;
-                                        left: 2px;
+                                        top: 0px;
+                                        font-size: 28px;
+                                        left: 0px;
                                     }
                 }
                 }
@@ -110,6 +112,13 @@ main{
                         background-color:$couleur_tertiaire ;
                 }
         }
+        & .ellipssis{
+                text-transform: uppercase;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                padding: 10px;
+        }
         &__entrecard{
                 display: flex;
                 justify-content: space-between;
@@ -118,22 +127,26 @@ main{
                 border-radius: 15px;
                 background-color: $couleur_blanche;
                 box-shadow: 3px 3px 13px -2px rgba(33, 32, 32, 0.2);
+                overflow: hidden;
                 & span{
                         padding: 10px;
                 }
                 
                 &__div{
                         padding: 10px;
-                & p{
+                & .ellipsis{
                         overflow: hidden;
                         white-space: nowrap;
-                        text-overflow: ellipsis;
+                        text-overflow: ellipsis ;
+                        font-weight: bold;
+                        
                         
                        // @include text-overflow-elipsis();
                         //font-weight: bold;   
                 }
         }
                 &__check{
+                //      border: 2px solid $couleur_primaire;
                      padding-top: 25px;
                      height:80px;
                      border-radius: 0px 15px 15px 0px;
@@ -141,20 +154,22 @@ main{
                      color: $couleur_tertiaire; 
                      text-align: center;
                      width: 20%;
-                     display: none;
-                     transition: display 10s; 
+                     margin-right: -89px;
+                    // display: none;
+                     transition: margin-right 1s; 
                      &--background{ 
-                       
                         background-color: $couleur_blanche;
                         border-radius: 50%;
-                        padding: 2px;
                         
                      }
+                }
+                & span{
+                
                 }
                 & .check .contain .spane { 
                         // color: #56dc73;
                         // transition: color 10S; 
-                        transform: rotate(0turn);  
+                        transform: rotate(1turn);  
                         transition: transform 2s;       
                 }
                
@@ -164,9 +179,10 @@ main{
                 // transition: transform 3s;
                
                 & .check{
-                        display: block;
+                        margin-right: 0;
+                        //display: block;
                         // animation: apparition 5s linear;
-                        & .contain .spane {animation:rotation .5s forwards }   
+                        & .contain .spane {animation:rotation .75s forwards }   
                 }
                 
         }
