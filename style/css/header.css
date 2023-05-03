@@ -4,6 +4,8 @@
   justify-content: space-between;
   padding: 20px 0;
   color: beige;
+  height: 80px;
+  
 }
 .header__span {
   color: #000;
@@ -16,11 +18,15 @@
   display: flex;
   justify-content: center;
   width: 90%;
-  margin-right: 30px;
+  align-items: center;
+  /* margin-right: 30px; */
 }
 .header__logo__img {
-  width: 20%;
-  max-width: 30%;
+  max-width: 50%
+  /* object-fit: cover;
+  object-position: center; */
+  /* height: 80px;
+  padding-top: 10px; */
 }
  .header__logo__index {
   width: 100%;

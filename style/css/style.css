@@ -4,16 +4,18 @@
 @import url("./../css/helpers/_$Variable.css");
 /******************************VARIABLE*****************************/
 .container3 {
-  position: fixed;
+
+  position: relative;
   background-color: #0d0d0d;
   opacity: 0.9;
   height: 100vh;
-  inset: 0px;
+  /* inset: 0px; */
   z-index: 1;
   color: #FFFFFF;
   line-height: 500px;
   padding-left: 45%;
-  animation: display 9s 1s forwards;
+  animation: display 5s 1s forwards;
+  animation: moveHeight 5s 1s forwards;
 }
 
 .laoder {
@@ -63,6 +65,10 @@
   opacity: 0.6;
   animation: spinreverse 3s linear 0s forwards;
 }
+.cache{
+  opacity: 0;
+  transition: opacity 6s;
+}
 
 @keyframes spin {
   0% {
@@ -86,9 +92,20 @@
   100% {
     display: none;
     opacity: 0;
+    /* position: relative; */
     z-index: 0;
   }
 }
+
+@keyframes moveHeight{
+  0%{
+    height: 100vh;
+  }
+  100% {
+      height: 0;
+  }
+}
+
 @keyframes spinreverse {
   0% {
     transform: rotate(0deg);
@@ -129,7 +146,11 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.index{
+  z-index: 1;
+}
 .localisation {
+  box-shadow: inset 0 0 3px #000;
   background-color: #ebf0f6;
   justify-content: center;
   display: flex;
@@ -155,11 +176,11 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 250px;
+  height: 300x;
 }
 .baniere__title {
   text-align: center;
-  font-size: 35px;
+  font-size: 100%;
   margin: 30px 0;
 }
 .baniere__paragraphe {
@@ -183,6 +204,11 @@ body {
   color: #FFFFFF;
 }
 
+.baniere .baniere__explorer:hover{
+       cursor: pointer;
+       background-color: #99E2D0;
+}
+
 .fonctionnement {
   background-color: #FFFFFF;
   padding: 0px 20px 0px 20px;
@@ -203,7 +229,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: 20px 10px 20px 10px;
-  height: 50px;
+  font-size: 20px;
+  height: 70px;
   font-weight: bold;
   border-radius: 20px;
   position: relative;
@@ -212,10 +239,11 @@ body {
 }
 .fonctionnement__chosissez__texte {
   text-align: center;
-  margin-left: 100px;
+  margin-left: 30px;
 }
 .fonctionnement__chosissez__icon {
   text-align: center;
+  margin-left: -50px;
 }
 .fonctionnement__chosissez__numero {
   position: absolute;
@@ -251,10 +279,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  /* height: 500px; */
 }
 .restaurant .restaurant__br {
   transition: transform 1s ease-in-out;
   border-radius: 15px;
+  /* height: 100px; */
   /* background-color: #FF79DA; */
   margin-bottom: 25px;
   /* border: 5px solid #9356DC; */
@@ -348,15 +378,15 @@ body {
 
 @media only screen and (max-width: 768px){
   .baniere__title {
-    font-size: 25px;
+    font-size: 45px;
   }
 
   .baniere__paragraphe {
-    font-size: 20px;
+    font-size: 25px;
   }
 .baniere__explorer {
-  width: 40%;
-  font-size: 15px;
+  /* width: 40%; */
+  font-size: 20px;
 }
   .restaurant__img {
     height: 250px;
