@@ -212,11 +212,11 @@ h3 {
   }
   main .plat .palette_text .palette_heart .coeur-contenant:hover {
     color: #FF79DA;
-    counter-reset: #FF79DA;
+    /* counter-reset: #FF79DA; */
   }
   main .plat .palette_text .palette_heart .coeur-contenant:hover .coeur-colore {
     top: 0px;
-    font-size: 25px;
+    font-size: 28px;
     left: 0px;
   }
 
@@ -430,6 +430,10 @@ h3 {
     transform: rotate(1turn);
     transition: transform 2s;
   }
+  main .menus .menus__item .menus__icons .menus__check .spane {
+    transform: rotate(1turn);
+    transition: transform 2s;
+  }
   main .entree__entrecard:hover  {
     cursor: pointer; 
   }
@@ -440,9 +444,18 @@ h3 {
   main .entree__entrecard:hover .check {
     margin-right: 0;
   }
+
+
+
+  main .menus__item:hover .menus__icons .menus__check .spane {
+    animation: rotation 1.5s forwards;
+  }
   main .entree__entrecard:hover .check .contain .spane {
     animation: rotation 0.75s forwards;
   }
+
+
+
   main .entree__slideUp1 {
     animation: slideUp 1s forwards;
   }
@@ -521,7 +534,7 @@ h3 {
   }
   .plat .palette_text .palette_heart .coeur-contenant:hover {
     color: #FF79DA;
-    counter-reset: #FF79DA;
+    /* counter-reset: #FF79DA; */
   }
   .plat .palette_text .palette_heart .coeur-contenant:hover .coeur-colore {
     top: 0px;
@@ -543,7 +556,7 @@ h3 {
     }
 
     main .entree__entrecard__check {
-      padding-top: 25px;
+      /* padding-top: 25px;
       height: 80px;
       border-radius: 0px 15px 15px 0px;
       background-color: #99E2D0;
@@ -551,7 +564,7 @@ h3 {
       text-align: center;
       width: 20%;
       margin-right: -140px;
-      font-size: 20px;
+      font-size: 20px; */
       transition: margin-right 1s;
     }
   }

@@ -181,7 +181,6 @@ body {
   font-size: 20px;
   background-color: #FF79DA;
   color: #FFFFFF;
-  cursor: cursor;
 }
 
 .fonctionnement {
@@ -285,12 +284,11 @@ body {
 }
 .restaurant .palette_text {
   margin-top: -4px;
-  padding: 20px 15px 20px 15px;
+  padding: 20px 10px 20px 10px;
   background-color: #FFFFFF;
   border-radius: 0px 0px 15px 15px;
   display: flex;
   justify-content: space-between;
-  
 }
 .restaurant .palette_text .font{
   font-weight: bold;
@@ -309,13 +307,14 @@ body {
   overflow: hidden;
   cursor: pointer;
   color: #a9a9a9;
+  /* padding: 1px; */
 }
 .restaurant .palette_text .palette_heart .coeur-colore {
   position: absolute;
   top: 60px;
   left: 30px;
   font-size: 0px;
-  transition: top 0.5s, font-size 0.5s, left 0.5s;
+  transition: top 3s, font-size 3s, left 3s;
   background: linear-gradient(to left, #9356DC 0%, #FF79DA 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -324,12 +323,12 @@ body {
 .restaurant .palette_text .palette_heart .coeur-contenant:hover {
   padding-right: 0.25px;
   color: #e251ea;
-  counter-reset: #FF79DA;
+  /* counter-reset: #FF79DA; */
 }
 .restaurant .palette_text .palette_heart .coeur-contenant:hover .coeur-colore {
-  top: 1.5px;
-  font-size: 23px;
-  left: 2px;
+    top: 0px;
+    font-size: 28px;
+    left: 0px;
 }
 
 .restaurant__br__liens {
