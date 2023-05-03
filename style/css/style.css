@@ -212,7 +212,7 @@ body {
   box-shadow: 3px 3px 13px -2px rgba(33, 32, 32, 0.2);
 }
 .fonctionnement__chosissez__texte {
-  text-align: right;
+  text-align: center;
   margin-left: 100px;
 }
 .fonctionnement__chosissez__icon {
