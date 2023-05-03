@@ -22,6 +22,9 @@ $couleur_grise:#ebf0f6;
         white-space: nowrap;
 }
 
+       
+          
+
 h1,
 h2,
 h3{
@@ -29,8 +32,146 @@ h3{
 }
 
 
+.menus{
+        display: flex;
+        justify-content: space-around;
+.entree{
+        margin-top: 20px;
+        width: 33%;
+        &__title{
+                margin:0 0 0 20px;
+                text-transform: uppercase;
+                .trait{
+                        margin: 6px 0 20px 0;
+                        border-color: $couleur_tertiaire;
+                        width: 48px;
+                        height: 5px;
+                        background-color:$couleur_tertiaire ;
+                }
+        }
+        &__entrecard{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px;
+                border-radius: 15px;
+                background-color: $couleur_blanche;
+                box-shadow: 3px 3px 13px -2px rgba(33, 32, 32, 0.2);
+                overflow: hidden;
+                .content{
+                     // justify-content: space-between;
+                      flex-direction: row;
+                      display: flex;
+                      flex-wrap: wrap;
+                      background-color: $couleur_secondaire;
+                      max-width: 100%;
+                        .details{
+                            display: flex;
+                            padding: 10px;
+                            justify-content: space-between;
+                            width: 100%;
+                            background-color: #9356DC;
+                            .ellipsis{
+                                display: flex;
+                                justify-content: space-between;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                
+                           
+                        }
+
+                        }
+                }
+                &__div{
+                        padding: 10px;
+                        .ellipsis{
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                // max-width: 100%;
+                        }
+                       
+        }
+                &__check{
+                //      border: 2px solid $couleur_primaire;
+                     padding-top: 25px;
+                     height:80px;
+                     border-radius: 0px 15px 15px 0px;
+                     background-color: $couleur_tertiaire;
+                     color: $couleur_tertiaire; 
+                     text-align: center;
+                     width: 20%;
+                     margin-right: -89px;
+                     font-size: 20px;
+                     transition: margin-right 1s; 
+                     &--background{ 
+                        padding: 2px;
+                        background-color: $couleur_blanche;
+                        border-radius: 50%;
+                        
+                     }
+                }
+
+                & .check .contain .spane { 
+                        // color: #56dc73;
+                        // transition: color 10S; 
+                        transform: rotate(1turn);  
+                        transition: transform 2s;       
+                }
+               
+        }
+        &__entrecard:hover{
+                cursor: pointer;
+                // transition: transform 3s;
+               
+                & .check{
+                        margin-right: 0;
+                        //display: block;
+                        // animation: apparition 5s linear;
+                        & .contain .spane {animation:rotation .75s forwards }   
+                }
+                
+        }
+        &__slideUp1{
+                animation: slideUp 1s forwards;
+}
+        &__slideUp2{
+                animation: slideUp 2s forwards;
+}
+        &__slideUp3{
+                animation: slideUp 3s forwards;
+}
+}
+}
+.commander{
+        display: flex;
+        justify-content: center;
+        &__buton{
+                cursor: pointer;
+                @include butom-color();
+                padding-top: 25px;
+                padding-bottom: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height:40px;
+                width: 40%;
+                border-radius: 40px;
+                max-width: 200px;
+                text-align: center;
+                margin:50px 0 50px 0;
+                color: $couleur_blanche;
+                box-shadow: 3px 3px 13px -2px rgba(33, 32, 32, 0.2);
+        }      
+}
+
+
+@media only screen and (max-width: 768px){
 main{      
-         // position: relative;;
+    
+
+      // position: relative;;
       
             background-color: $couleur_blanche; 
             overflow: hidden;
@@ -99,6 +240,7 @@ main{
                 }
         }
 
+       
 .entree{
         margin-top: 20px;
         &__title{
@@ -112,13 +254,6 @@ main{
                         background-color:$couleur_tertiaire ;
                 }
         }
-        & .ellipssis{
-                text-transform: uppercase;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-                padding: 10px;
-        }
         &__entrecard{
                 display: flex;
                 justify-content: space-between;
@@ -128,22 +263,37 @@ main{
                 background-color: $couleur_blanche;
                 box-shadow: 3px 3px 13px -2px rgba(33, 32, 32, 0.2);
                 overflow: hidden;
-                & span{
-                        padding: 10px;
+                .content{
+                      justify-content: space-between;
+                      flex-direction: column;
+                      display: flex;
+                      flex-wrap: nowrap;
+                      min-width: 10%;
+                        .details{
+                            display: flex;
+                            padding: 10px;
+                            justify-content: space-between;
+                            .ellipsis{
+                                display: flex;
+                                justify-content: space-between;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                width: 80%;
+                           
+                        }
+
+                        }
                 }
-                
                 &__div{
                         padding: 10px;
-                & .ellipsis{
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis ;
-                        font-weight: bold;
-                        
-                        
-                       // @include text-overflow-elipsis();
-                        //font-weight: bold;   
-                }
+                        .ellipsis{
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                max-width: 100%;
+                        }
+                       
         }
                 &__check{
                 //      border: 2px solid $couleur_primaire;
@@ -155,17 +305,16 @@ main{
                      text-align: center;
                      width: 20%;
                      margin-right: -89px;
-                    // display: none;
+                     font-size: 20px;
                      transition: margin-right 1s; 
                      &--background{ 
+                        padding: 2px;
                         background-color: $couleur_blanche;
                         border-radius: 50%;
                         
                      }
                 }
-                & span{
-                
-                }
+
                 & .check .contain .spane { 
                         // color: #56dc73;
                         // transition: color 10S; 
@@ -218,7 +367,74 @@ main{
         }      
 }
 }
+// background-color: $couleur_blanche; 
+// overflow: hidden;
+// display: flex;
+// flex-direction: column;
 
+.banieres__div{
+    // background-color: $couleur_primaire;
+             height: 250px;
+             overflow: hidden;
+            //  opacity: 0.5;
+            .banieres__div__img{
+                    width: 100%;
+                    height: 400px;
+            }
+    }
+
+.plat{
+    margin-top:-30px ;
+    font-size: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $couleur_grise;
+    transition: background-color 1s 2s;
+    .palette_text{
+            margin: 40px 40px;
+            display: flex;
+            font-size: 2rem;
+            justify-content: space-between;
+            align-items: center;
+            .palette_heart{
+                    .coeur-contenant {
+                            display: inline-block;
+                            height: 28px;
+                            position: relative;
+                            font-size: 2rem;
+                            overflow: hidden;
+                            cursor: pointer;
+                            color: $couleur_grisefonse
+                        }
+                        .coeur-colore {
+                            position: absolute;
+                            top: 60px;
+                            left: 10px;
+                            font-size: 0px;
+                            transition: top 3s, font-size 3s, left 3s;
+                            background: linear-gradient(to bottom, $couleur_primaire 0%,$couleur_secondaire 100%);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                        .coeur-contenant:hover{
+                            //padding-right: 0.25px;
+                            color: $couleur_secondaire;
+                            counter-reset: $couleur_secondaire;
+
+                        }
+                        .coeur-contenant:hover .coeur-colore {
+                            top: 0px;
+                            font-size: 2rem;
+                            left: 0px;
+                        }
+    }
+    }
+}
+}
 
 @keyframes slideUp {
         0%{

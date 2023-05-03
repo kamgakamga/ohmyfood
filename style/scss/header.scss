@@ -8,18 +8,26 @@ $couleur_grise:#F2F2F2;
         // position: fixed;
         width: 100%;
         display: flex;
-        justify-content: space-around;
-        background-color: $couleur_blanche;
+        justify-content: space-between;
+        // background-color: $couleur_secondaire;
         padding: 20px 0;
         color: beige;
         &__span{
-           color: #000;     
+           color: #000;
+           font-size: 30px;
+           padding-left: 30px;
+        //    background-color: #99E2D0;  
+           margin-left: 10px; 
+           width: 10%;  
         }
         &__logo{
                 display: flex;
                 justify-content: center;
+                // background-color: #9356DC;
+                width: 90%;
+                margin-right: 30px;
                 &__img{
-                        width: 30%;
+                        width: 20%;
                        max-width: 30%;
                 }
         }

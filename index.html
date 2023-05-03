@@ -16,7 +16,7 @@
                 Chargement...
         </div> 
         <header class="header">
-                <div class="header__logo">
+                <div class="header__logo header__logo__index">
                           <img src="./img/logo/ohmyfood.png" alt="logo du site ohmyfood" class="header__logo__img">
                 </div>
         </header>
@@ -38,24 +38,27 @@
                 </section>
                 <section class="fonctionnement">
                         <h3 class="fonctionnement__title">Fonctionnement</h3> 
-                        <div class="fonctionnement__chosissez">
-                                <div class="fonctionnement__chosissez__numero">1</div>
-                                <div class="fonctionnement__chosissez__icon "><i class="fas fa-mobile-alt"></i></div>
-                                <p class="fonctionnement__chosissez__texte">Choisissez un restaurant</p>
-                        </div>
-                        <div class="fonctionnement__chosissez">
-                                <div class="fonctionnement__chosissez__numero">2</div>
-                                <div class="fonctionnement__chosissez__icon color_icon"><i class="fas fa-list-ul"></i></div>
-                                <p class="fonctionnement__chosissez__texte">Composez votre menu</p>
-                        </div>
-                        <div class="fonctionnement__chosissez">
-                                <div class="fonctionnement__chosissez__numero">3</div>
-                                <div class="fonctionnement__chosissez__icon color_icon"><i class="fas fa-gift"></i></div>
-                                <p class="fonctionnement__chosissez__texte">Dégustez au restaurant</p>
+                        <div class="fonctionnement__item">
+                                <div class="fonctionnement__chosissez">
+                                        <div class="fonctionnement__chosissez__numero">1</div>
+                                        <div class="fonctionnement__chosissez__icon "><i class="fas fa-mobile-alt"></i></div>
+                                        <p class="fonctionnement__chosissez__texte">Choisissez un restaurant</p>
+                                </div>
+                                <div class="fonctionnement__chosissez">
+                                        <div class="fonctionnement__chosissez__numero">2</div>
+                                        <div class="fonctionnement__chosissez__icon color_icon"><i class="fas fa-list-ul"></i></div>
+                                        <p class="fonctionnement__chosissez__texte">Composez votre menu</p>
+                                </div>
+                                <div class="fonctionnement__chosissez">
+                                        <div class="fonctionnement__chosissez__numero">3</div>
+                                        <div class="fonctionnement__chosissez__icon color_icon"><i class="fas fa-gift"></i></div>
+                                        <p class="fonctionnement__chosissez__texte">Dégustez au restaurant</p>
+                                </div>
                         </div>
                 </section>
                 <section class="restaurant">
-                        <h2 class="restaurant__title">Restaurants</h2>
+                    <h2 class="restaurant__title">Restaurants</h2>
+                    <div class="restaurant__items">
                         <div class="restaurant__br">
                                 <a class="restaurant__br__liens" href="./menu/palete_du_gout.html">
                                         <div class="restaurant__br__liens__nouveau nouveau">Nouveau</div>
@@ -64,9 +67,10 @@
                                         </div>
                                 </a>
                                         <div class="palette_text">
-                                                <p>La palette du gout <br>
-                                                Ménilmontant
-                                                </p>
+                                                <div>
+                                                        <p class="font">La palette du gout </p>
+                                                        <p> Ménilmontant</p>
+                                                </div>
                                                 <div class="palette_heart">
                                                         <i class="far fa-heart coeur-contenant">
                                                                 <i class="fas fa-heart coeur-colore"></i>
@@ -84,9 +88,10 @@
                                         </div>
                                 </a>
                                         <div class="palette_text">
-                                                <p>La note enchantée <br>
-                                                Charonne
-                                                </p>
+                                            <div>
+                                                <p class="font">La note enchantée </p>
+                                                <p>Charonne</p>
+                                            </div>
                                                 <div class="palette_heart">
                                                         <i class="far fa-heart coeur-contenant">
                                                                 <i class="fas fa-heart coeur-colore"></i>
@@ -104,9 +109,10 @@
                                         </div>
                                 </a>
                                         <div class="palette_text">
-                                                <p>A la francais<br>
-                                                Cité Rouge
-                                                </p>
+                                             <div>
+                                                <p class="font">A la francais</p>
+                                                <p>Cité Rouge</p>
+                                             </div>
                                                 <div class="palette_heart">
                                                         <i class="far fa-heart coeur-contenant">
                                                                 <i class="fas fa-heart coeur-colore"></i>
@@ -124,9 +130,10 @@
                                         </div>
                                 </a>
                                         <div class="palette_text">
-                                                <p>Le délis des sens<br>
-                                                Folie-Méricourt
-                                                </p>
+                                            <div>
+                                                <p class="font">Le délis des sens</p>
+                                                <p>Folie-Méricourt</p>
+                                            </div>
                                                 <div class="palette_heart">
                                                         <i class="far fa-heart coeur-contenant">
                                                                 <i class="fas fa-heart coeur-colore"></i>
@@ -135,14 +142,23 @@
                                         </div>
                                 
                         </div>
+                    </div>
                 </section>
         </main> 
         <footer class="footer">
                 <h3 class="footer__title">ohmyfood</h3>
-                 <i class="fas fa-utensils"></i>Proposer un restaurant <br>
-                 <i class="fas fa-hands-helping t"></i>Devenir partenaire <br>
-                 Mentions légales <br>
-                 Contact
+                <div class="content">
+                        <div class="proposer">
+                                <span><i class="fas fa-utensils"></i></span>
+                                <p class="t"> Proposer un restaurant </p>
+                        </div>
+                        <div class="partenaire">
+                                <span><i class="fas fa-hands-helping t"></i></span>
+                                <p> Devenir partenaire </p>
+                        </div>
+                        <div class="mention"> Mentions légales</div>
+                        <div class="div">Contact</div> 
+                </div>
          </footer>
 </body>
 </html>   

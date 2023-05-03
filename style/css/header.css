@@ -1,21 +1,29 @@
 .header {
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  background-color: #FFFFFF;
+  justify-content: space-between;
   padding: 20px 0;
   color: beige;
 }
 .header__span {
   color: #000;
+  font-size: 30px;
+  padding-left: 30px;
+  margin-left: 10px;
+  width: 10%;
 }
 .header__logo {
   display: flex;
   justify-content: center;
+  width: 90%;
+  margin-right: 30px;
 }
 .header__logo__img {
-  width: 30%;
+  width: 20%;
   max-width: 30%;
 }
+ .header__logo__index {
+  width: 100%;
+} 
 
 /*# sourceMappingURL=header.css.map */
