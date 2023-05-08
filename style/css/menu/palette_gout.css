@@ -222,7 +222,7 @@ h3 {
             top: 44.5px;
             left: 25px;
             font-size: 0px;
-            transition: top 0.5s, font-size 0.5s, left 0.5s;
+            transition: top 2s, font-size 2s, left 2s;
             background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
             /* background: linear-gradient(to bottom, yellow 0%,red 100%); */
             background-clip: text;
